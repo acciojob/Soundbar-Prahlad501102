@@ -1,17 +1,20 @@
-//your JS code here. If required.
 const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong'];
-const btnContainer = document.getElementById('buttons');
 
 sounds.forEach(sound => {
-    const btn = document.querySelector(`.btn:nth-child(${sounds.indexOf(sound) + 1})`);
+    const btn = document.createElement('button');
+    btn.classList.add('btn');
+    btn.innerText = sound;
 
     btn.addEventListener('click', () => {
         stopSongs();
         document.getElementById(sound).play();
     });
+
+    document.getElementById('buttons').appendChild(btn);
 });
 
-document.querySelector('.stop').addEventListener('click', () => {
+const stopBtn = document.querySelector('.stop');
+stopBtn.addEventListener('click', () => {
     stopSongs();
 });
 
