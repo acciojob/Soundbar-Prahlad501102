@@ -1,24 +1,31 @@
 body {
-    background-color: rgb(161, 100, 223);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#buttons {
+  background-color: #a66be2;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .btn {
-    background-color: rebeccapurple;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    margin: 1rem;
-    padding: 1.5rem 3rem;
-    font-size: 1.2rem;
-    cursor: pointer;
+  background-color: #6a3d9a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .btn:hover {
-    opacity: 0.9;
+  opacity: 0.9;
+}
+
+.stop {
+  background-color: #6a3d9a;
 }
