@@ -1,29 +1,27 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: #a56adf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttons {
-  background-color: #a96be2;
-  height: 300px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-.btn,
-.stop {
-  background-color: #6f3da8;
-  color: white;
+.btn {
+  padding: 12px 24px;
+  background: #6b3fa0;
   border: none;
-  padding: 15px 25px;
-  font-size: 16px;
-  border-radius: 5px;
+  border-radius: 4px;
+  color: white;
   cursor: pointer;
+  font-size: 14px;
 }
 
-.btn:hover,
-.stop:hover {
-  opacity: 0.9;
+.stop {
+  background: #6b3fa0;
 }
